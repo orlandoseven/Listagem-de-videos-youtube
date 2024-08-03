@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+header {
+  padding: 20px;
+}
+.menu-icones {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.menu-icones .menu-youtube {
+  display: flex;
+  column-gap: 20px;
+}
+.menu-icones .menu-youtube button {
+  background-color: #fff;
+  border: none;
+}
+.pesquisar {
+  display: flex;
+}
+.pesquisar input {
+  display: flex;
+  height: 32px;
+
+  border-radius: 40px 0 0 40px;
+  padding: 0 150px 0 15px;
+  border: 1px solid rgba(204, 204, 204, 1);
+}
+.pesquisar button {
+  border: none;
+  width: 57px;
+  height: 32px;
+  border-radius: 0 20px 20px 0;
+  border: 1px solid rgba(204, 204, 204, 1);
+}
+.pesquisar button img {
+  width: 26px;
+  padding: 2px;
+}
+.menu-criar {
+  display: flex;
+  column-gap: 18px;
+}
+.menu-criar button {
+  background-color: #fff;
+  border: none;
+}
+
+.sidbar {
+  display: flex;
+  padding: 24px;
+}
+.sidbar .menu-left {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.sidbar .menu-left a {
+  display: flex;
+  align-items: center;
+}
+
+.sidbar .menu-left img {
+  margin-right: 10px;
+}
+.container {
+  display: flex;
+}
+#content-main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+  align-content: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.image-video {
+  padding: 1rem;
+}
+.image-video img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.info h3 {
+  display: flex;
+  place-items: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+.info h3::before {
+  content: url("/img/img-video/logo-dio.png");
+  margin-right: 8px;
+}
+.info p {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 8px 0 0 50px;
+  color: rgba(81, 81, 81, 1);
+}
